@@ -1,0 +1,606 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(36, 33, 32);
+    display: flex;
+    flex-direction: column;
+}
+
+.navBarContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+   
+}
+
+.navBar{
+    margin-top: 20px;
+    width: 84%;
+    height: 100px;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(237, 229, 194);
+    border-radius: 20px;
+
+}
+
+.firstPart{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.secondPart{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 100px;
+    /*background-color: red;*/
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+#busImage{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+#instagramImg{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition-property: height, width;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease, ease;
+    
+}
+
+#instagramImg:hover{
+    height: 50px;
+    width: 50px;
+}
+
+.title{
+    font-size: 30px;
+    font-family: 'Alice', serif;
+    color: rgb(237, 229, 194);
+}
+.title a{
+    text-decoration: none;
+    color: rgb(237, 229, 194);
+}
+.text{
+    color: rgb(237, 229, 194);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    transition: font-size 0.5s ease;
+    cursor: pointer;
+}
+
+.text:hover{
+    font-size: 20px;
+}
+
+.middleSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.middleFirst{
+    width: 40%;
+    /*background-color: violet;*/
+}
+.middleSecond{
+    width: 40%;
+    /*background-color: aqua;*/
+    
+    /*display: flex;
+    justify-content: flex-start;
+    align-items: center;*/
+}
+.middleThird{
+    width: 20%;
+    /*background-color: blueviolet;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.viewMenuButton{
+    height: 45px;
+    width: 170px;
+    border-radius: 10px;
+    background-color: rgb(235, 78, 16);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+
+    
+    
+}
+
+
+.viewMenuButton p{
+    color: rgb(237, 229, 194);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.paragraphSection{
+    position: relative;
+    opacity: 0;
+}
+.fadeParagraph{
+    animation: fade 2.5s ease forwards;
+    animation-delay: 0.4s;
+}
+@keyframes fade {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.paragraphSection p{
+    color: rgb(237, 229, 194);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.mainTitleSection{
+    position: relative;
+    opacity: 0;
+    
+}
+.animateTitle{
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+}
+@keyframes fadeUp {
+    0%{opacity: 0; transform: translateY(150px);}
+    100%{opacity: 1; transform: translateY(0);}
+}
+/*@keyframes fadeUp {
+    0%{opacity: 0; top: 100px;}
+    100%{opacity: 1; top: 0;}
+    
+}*/
+
+.mainTitleSection h1{
+    color: rgb(237, 229, 194);
+    font-size: 70px;
+    font-family: 'Alice', serif;
+}
+
+.moveMiddleFirst{
+    margin-left: 100px;
+}
+
+#mainImage{
+    height: 400px;
+    width: 300px;
+    transform: rotate(-5deg);
+}
+
+
+
+.moveMiddleSecond{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#mainImage{
+    position: absolute;
+    left: 65px;
+    top: 20px;
+    z-index: 100;
+
+}
+
+.square{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    border: 2px solid rgb(235, 78, 16);
+    left: 65px;
+    top: 20px;
+    animation: rotateSquare 1.2s ease forwards;
+
+}
+
+@keyframes rotateSquare {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(1805deg);}
+}
+
+.lastSection{
+    margin-top: 120px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(235, 78, 16);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.moveMiddleThird{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addressSection{
+    color: rgb(237, 229, 194);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.toGo-ContactSection{
+    color: rgb(237, 229, 194);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.hoursSection{
+    color: rgb(237, 229, 194);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.CateringSection{
+    color: rgb(237, 229, 194);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0;
+}
+.showCateringSection{
+    animation: fade 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.servingSection{
+    color: rgb(237, 229, 194);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0;
+}
+
+.showServingSection{
+    animation: fade 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.svgImage{
+    height: 50px;
+    width: 50px;
+    
+}
+
+.backgroundImage{
+    position: absolute;
+    left: 2px;
+    top: 110px;
+    /*transform: rotate(15deg);*/
+    animation: rotateStar 11s linear infinite;
+}
+
+@keyframes rotateStar {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+
+.addressFont{
+    position: relative;
+    font-size: 20px;
+    opacity: 0;
+    
+    
+}
+.moveLeftAddressFont{
+    animation: moveLeft 0.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.addressInfo{
+    opacity: 0;
+}
+.addFadeToAddressInfo{
+    animation: fade 1.5s ease forwards;
+    animation-delay: 0.6s;
+    /*animation-delay: 1s;*/
+}
+
+@keyframes moveLeft {
+    0%{transform: translateX(100px); opacity: 0;}
+    100%{transform: translateX(0px); opacity: 1;}
+}
+
+.phoneNumber{
+    opacity: 0;
+}
+.fadeInNumber{
+    animation: fade 1.5s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.toGoFont{
+    font-size: 20px;
+    position: relative;
+    opacity: 0;
+}
+
+.moveLeftToGoFont{
+    animation: moveLeft 0.5s ease forwards;
+    animation-delay: 0.8s;
+}
+.HoursFont{
+
+    font-size: 20px;
+    opacity: 0;
+}
+
+.hoursMoveLeft{
+    animation: moveLeft 0.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+
+.stakeImg{
+    /*position: absolute;*/
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    
+}
+
+.firstLowImage{
+    position: relative;
+    bottom: 80px;
+}
+
+.secondLowImage{
+    position: relative;
+    bottom: 80px;
+}
+
+.thirdLowImage{
+    position: relative;
+    bottom: 80px;
+}
+
+.lines{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 50px;
+    width: 140px;
+    /*background-color: red;*/
+}
+.line1{
+    position: relative;
+    top: 12px;
+    height: 15px;
+    width: 3px;
+    border-radius: 8px;
+    background-color: rgb(235, 78, 16);
+    
+    animation: floatAndRotate 2s ease-in-out infinite;
+
+}
+
+.line2{
+    margin-left: 18px;
+    height: 30px;
+    width: 3px;
+    border-radius: 8px;
+    background-color: rgb(235, 78, 16);
+    animation: floatAndRotate2 2s ease-in-out infinite;
+}
+
+.line3{
+    position: relative;
+    top: 20px;
+    margin-left: 15px;
+    height: 15px;
+    width: 3px;
+    border-radius: 8px;
+    background-color: rgb(235, 78, 16);
+    animation: floatAndRotate3 2s ease-in-out infinite;
+}
+
+
+@keyframes floatAndRotate {
+    0%, 100% {
+      transform: translateY(0) rotate(-30deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(-30deg);
+    }
+  }
+
+  @keyframes floatAndRotate2 {
+    0%, 100% {
+      transform: translateY(0) rotate(15deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(15deg);
+    }
+  }
+  @keyframes floatAndRotate3 {
+    0%, 100% {
+      transform: translateY(0) rotate(65deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(65deg);
+    }
+  }
+
+
+.linesTwo{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+}  
+
+.line4{
+    position: relative;
+    top: 20px;
+    height: 15px;
+    width: 3px;
+    background-color: rgb(235, 78, 16);
+    animation: floatAndRotate4 2s ease-in-out infinite;
+}
+@keyframes floatAndRotate4 {
+    0%, 100% {
+        transform: translateY(0) rotate(-40deg);
+      }
+      50% {
+        transform: translateY(-15px) rotate(-40deg);
+      }
+}
+
+.line5{
+    height: 30px;
+    width: 3px;
+    background-color: rgb(235, 78, 16);
+    margin-left: 20px;
+    margin-right: 20px;
+    animation: floatAndRotate5 2s ease-in-out infinite;
+}
+
+@keyframes floatAndRotate5 {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-15px) rotate(0deg);
+      }
+}
+
+.line6{
+    position: relative;
+    top: 20px;
+    height: 15px;
+    width: 3px;
+    background-color: rgb(235, 78, 16);
+    animation: floatAndRotate6 2s ease-in-out infinite;
+}
+
+@keyframes floatAndRotate6 {
+    0%, 100% {
+        transform: translateY(0) rotate(50deg);
+      }
+      50% {
+        transform: translateY(-15px) rotate(50deg);
+      }
+}
+
+.linesThree{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 50px;
+    width: 140px;
+}
+
+.line7{
+    position: relative;
+    top: 20px;
+    height: 15px;
+    width: 3px;
+    margin-right: 12px;
+    background-color: rgb(235, 78, 16);
+    animation: floatAndRotate7 2s ease-in-out infinite;
+}
+
+@keyframes floatAndRotate7 {
+    0%, 100% {
+        transform: translateY(0) rotate(-50deg);
+      }
+      50% {
+        transform: translateY(-15px) rotate(-50deg);
+      }
+}
+
+.line8{
+    height: 30px;
+    width: 3px;
+    margin-right: 20px;
+    background-color: rgb(235, 78, 16);
+    animation: floatAndRotate8 2s ease-in-out infinite;
+}
+
+@keyframes floatAndRotate8 {
+    0%, 100% {
+        transform: translateY(0) rotate(-20deg);
+      }
+      50% {
+        transform: translateY(-15px) rotate(-20deg);
+      }
+}
+
+.line9{
+    position: relative;
+    top: 12px;
+    height: 15px;
+    width: 3px;
+    background-color: rgb(235, 78, 16);
+    animation: floatAndRotate9 2s ease-in-out infinite;
+}
+
+@keyframes floatAndRotate9 {
+    0%, 100% {
+        transform: translateY(0) rotate(25deg);
+      }
+      50% {
+        transform: translateY(-15px) rotate(25deg);
+      }
+}
+.realHours{
+    opacity: 0;
+}
+.showRealHours{
+    animation: fade 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.closedHours{
+    opacity: 0;
+}
+.showClosedHours{
+    animation: fade 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+
+  
+
+
